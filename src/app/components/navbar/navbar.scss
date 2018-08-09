@@ -1,0 +1,30 @@
+.flex-center-space-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header-wrapper {
+  padding: 3rem 0;
+
+
+  .logo-container {
+    width: 20%;
+  }
+
+  .categories {
+    width:60%;
+    color: #6b8cae;
+
+    .category{
+
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+  .logo {
+    width: 15rem;
+  }
+}

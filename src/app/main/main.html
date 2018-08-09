@@ -1,0 +1,119 @@
+<div class="container">
+
+  <div>
+      <!-- <div class="header-wrapper flex-center-space-between">
+          <div class="logo-container">
+            <img class="logo" src="assets/images/landing/logo.png" alt="">
+          </div>
+          <div class="categories flex-center-space-between">
+            <a ng-click="scrollTo('home')" class="category">Home</a>
+            <a ng-click="scrollTo('whatwedo')" class="category">What we do</a>
+            <a ng-click="scrollTo('ourproduct')" class="category">Our Product</a>
+            <a ng-click="scrollTo('leadership')" class="category">Leadership</a>
+            <a ng-click="scrollTo('careers')"class="category">Careers</a>
+            <a ng-click="scrollTo('contactus')" class="category">Contact Us</a>
+          </div>
+        </div> -->
+
+
+
+  </div>
+  <div class="intelligent-systems">
+    <img src="assets/images/landing/home-page.png" alt="">
+    <p class="intelligent-intro">We build <b>Intelligent systems</b>
+        for Automated decision making</p>
+  </div>
+
+  <div class="what-we-do-wrapper" id="whatwedo">
+    <p class=" flex-center-center what-we-do-title">What we do</p>
+    <div class="what-we-do-intro">
+      <p>At PE we are building a world where financial decisions are data driven, fast and common man foccused.</p>
+      <p>We Use AI/ML to uncover hidden patterns from huge amounts of data from across industries to find you a better life and business.</p>
+  </div>
+  <div class="categories">
+      <div class="to-do-wrapper">
+
+    <div class="to-do-list">
+      <div class="image-holder">
+        <img src="assets/images/landing/AI.svg" alt="">
+      </div>
+      <div>
+        <p class="list-title">Uncovering the hidden</p>
+        <p class="list-desc">A.I. is great at finding those hidden co-relations and causations which hide deep within Big Data.</p>
+      </div>
+      <div>      <img class="con-icon" src="assets/images/landing/ai-icon.svg" alt="">
+      </div>
+    </div >
+
+    <div class="con-wrapper">
+    <img class="connector" src="assets/images/landing/arrow-right.png" alt="">
+</div>
+      </div>
+    <div class="to-do-wrapper">
+    <div class="to-do-list">
+        <div class="image-holder">
+          <img src="assets/images/landing/adapting.svg" alt="">
+        </div>
+        <div>
+          <p class="list-title">Ever Adapting </p>
+          <p class="list-desc">Taking inspiration from Darwin's Theory our AI system evolves millions of scenarios and responses constantly selecting the best response in a given scenario</p>
+        </div>
+      </div>
+      <img class="connector-rev" src="assets/images/landing/arrow-left.png" alt="">
+
+    </div>
+    <div class="to-do-wrapper">
+
+      <div class="to-do-list">
+          <div class="image-holder">
+            <img src="assets/images/landing/accuracy.svg" alt="">
+          </div>
+          <div>
+            <p class="list-title">Accuracy</p>
+            <p class="list-desc">Our tech is only as good as the predictions we make. We set up our solutions so that it's easy to see the differential that our accurate predictions can make.</p>
+          </div>
+        </div>
+
+        <img class="connector" src="assets/images/landing/arrow-right.png" alt="">
+
+        </div>
+        <div class="to-do-wrapper">
+
+        <div class="to-do-list">
+            <div class="image-holder">
+              <img src="assets/images/landing/learning.svg" alt="">
+            </div>
+            <div>
+              <p class="list-title">Constantly learning </p>
+              <p class="list-desc">The world is a dynamic environment; so why do analytics on static data? We use algorithms which constantly learn from new information enhancing their ability to better predict the future.</p>
+            </div>
+          </div>
+
+
+          </div>
+
+  </div>
+
+  <img class="triange" src="assets/images/landing/what-we-do.png" alt="">
+  </div>
+
+  <section id="ourproducts">
+    <p class="our-product-title"></p>
+    <p class="finance-title"></p>
+    <p class="finance-desc"></p>
+  </section>
+
+  <secion class="row" id="ourproduct" name="ourproduct">
+    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
+      <div class="thumbnail">
+        <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
+        <div class="caption">
+          <h3>{{ awesomeThing.title }}</h3>
+          <p>{{ awesomeThing.description }}</p>
+          <p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
