@@ -6,7 +6,11 @@
 
 
 .header-wrapper {
-  padding: 3rem 0;
+  position: fixed;
+  z-index: 100;
+  width:60%;
+  margin: 0 10rem;
+  margin-bottom:30px;
 
 
   .logo-container {
@@ -20,7 +24,7 @@
     .category{
 
       &:hover {
-        color: orange;
+        color: #ff6800;
       }
     }
   }

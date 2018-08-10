@@ -1,7 +1,8 @@
 <div class="container">
 
   <div>
-      <!-- <div class="header-wrapper flex-center-space-between">
+    <header>
+      <div class="header-wrapper flex-center-space-between">
           <div class="logo-container">
             <img class="logo" src="assets/images/landing/logo.png" alt="">
           </div>
@@ -13,11 +14,13 @@
             <a ng-click="scrollTo('careers')"class="category">Careers</a>
             <a ng-click="scrollTo('contactus')" class="category">Contact Us</a>
           </div>
-        </div> -->
+        </div>
+      </header>
 
 
 
   </div>
+  <div style="margin-top: 10rem; height: 80vh; overflow: scroll">
   <div class="intelligent-systems">
     <img src="assets/images/landing/home-page.png" alt="">
     <p class="intelligent-intro">We build <b>Intelligent systems</b>
@@ -41,8 +44,8 @@
         <p class="list-title">Uncovering the hidden</p>
         <p class="list-desc">A.I. is great at finding those hidden co-relations and causations which hide deep within Big Data.</p>
       </div>
-      <div>      <img class="con-icon" src="assets/images/landing/ai-icon.svg" alt="">
-      </div>
+      <!-- <div>      <img class="con-icon" src="assets/images/landing/ai-icon.svg" alt="">
+      </div> -->
     </div >
 
     <div class="con-wrapper">
@@ -97,13 +100,55 @@
   <img class="triange" src="assets/images/landing/what-we-do.png" alt="">
   </div>
 
-  <section id="ourproducts">
-    <p class="our-product-title"></p>
-    <p class="finance-title"></p>
-    <p class="finance-desc"></p>
+  <section id="ourproducts" class="our-products-container">
+    <p class="our-product-title">OUR PRODUCTS</p>
+    <p class="finance-title">Finance &amp; Investment – ProfitUno</p>
+    <p class="finance-desc">To help demonstrate the power of our fully autonomous AI Technology, we have developed our own product for transparent and accurate investment decisions.</p>
+    <div class="video-container">
+      <div class="video-desc">
+        <p class="desc-1">
+          <span class="profitUno">ProfitUno</span> is a next generation trading and investment management solution for automated decision making.</p>
+        <p  class="desc-2">Smartest and most intutive platform that cuts through the noise and give unique insights on stocks and indexes.</p>
+      </div>
+      <div class="video-thumb">
+          <iframe width="250" height="200"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+      </div>
+    </div>
   </section>
 
-  <secion class="row" id="ourproduct" name="ourproduct">
+  <section class="leadership-wrapper">
+    <p class="leadership-title">LEADERSHIP</p>
+    <div class="leaders-container">
+      <div class="leader">
+        <img class="leader-icon" src="assets/images/landing/leader1.svg" alt="">
+        <span class="name">Shiv Das</span>
+        <span class="degree">(B.E, MBA, XIMB)</span>
+        <span class="designation">COO &amp; Co-Founder</span>
+      </div>
+      <div class="leader">
+        <img class="leader-icon" src="assets/images/landing/leader1.svg" alt="">
+        <span class="name">Shiv Das</span>
+        <span class="degree">(B.E, MBA, XIMB)</span>
+        <span class="designation">COO &amp; Co-Founder</span>
+      </div>
+      <div class="leader">
+        <img class="leader-icon" src="assets/images/landing/leader1.svg" alt="">
+        <span class="name">Shiv Das</span>
+        <span class="degree">(B.E, MBA, XIMB)</span>
+        <span class="designation">COO &amp; Co-Founder</span>
+      </div>
+      <div class="leader">
+        <img class="leader-icon" src="assets/images/landing/leader1.svg" alt="">
+        <span class="name">Shiv Das</span>
+        <span class="degree">(B.E, MBA, XIMB)</span>
+        <span class="designation">COO &amp; Co-Founder</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- <secion class="row" id="ourproduct" name="ourproduct">
     <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
       <div class="thumbnail">
         <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
@@ -114,6 +159,6 @@
         </div>
       </div>
     </div>
-  </section>
-
+  </section> -->
+</div>
 </div>
