@@ -7,7 +7,7 @@
             <img class="logo" src="assets/images/landing/logo.png" alt="">
           </div>
           <div class="categories flex-center-space-between">
-            <a ng-click="scrollTo('home')" class="category">Home</a>
+            <a ng-class="activeTab === 'home' ? 'active' : 'inactive'" ng-click="scrollTo('home')" class="category">Home</a>
             <a ng-click="scrollTo('whatwedo')" class="category">What we do</a>
             <a ng-click="scrollTo('ourproduct')" class="category">Our Product</a>
             <a ng-click="scrollTo('leadership')" class="category">Leadership</a>
@@ -21,7 +21,7 @@
 
   </div>
   <div style="margin-top: 10rem; height: 80vh; overflow: scroll">
-  <div class="intelligent-systems">
+  <div class="intelligent-systems" id="home">
     <img src="assets/images/landing/home-page.png" alt="">
     <p class="intelligent-intro">We build <b>Intelligent systems</b>
         for Automated decision making</p>
@@ -100,7 +100,7 @@
   <img class="triange" src="assets/images/landing/what-we-do.png" alt="">
   </div>
 
-  <section id="ourproducts" class="our-products-container">
+  <section id="ourproduct" class="our-products-container">
     <p class="our-product-title">OUR PRODUCTS</p>
     <p class="finance-title">Finance &amp; Investment – ProfitUno</p>
     <p class="finance-desc">To help demonstrate the power of our fully autonomous AI Technology, we have developed our own product for transparent and accurate investment decisions.</p>
@@ -118,7 +118,7 @@
     </div>
   </section>
 
-  <section class="leadership-wrapper">
+  <section class="leadership-wrapper" id="leadership">
     <p class="leadership-title">LEADERSHIP</p>
     <div class="leaders-container">
       <div class="leader">
@@ -145,6 +145,118 @@
         <span class="degree">(B.E, MBA, XIMB)</span>
         <span class="designation">COO &amp; Co-Founder</span>
       </div>
+    </div>
+    </section>
+    <section class="career-wrapper flex-center" id="careers">
+      <div class="career">
+        <p class="leadership-title">CAREERS</p>
+        <p class="career-desc">PE is unlike anything you’d expect. We love a challenge and every day presents us with new and interesting problems to solve. We collaborate to craft solutions and find the answers that will lead us, and the industry, to better results.
+        </p>
+      </div>
+      <div class="card-row">
+        <div class="career-card">
+          <p class="card-name">Data Scientist</p>
+          <p class="card-desc">Person employed to analyse and interpret complex digital data, such as the usage statistics of a website, especially in order to assist a business in its decision-making.</p>
+          <div class="card-footer">
+            <div>
+              <img class="time-icon" src="assets/images/landing/time.svg" alt="">
+              <span class="footer-text">2 years experienced</span>
+            </div>
+            <div>
+              <img class="time-icon" src="assets/images/landing/placeholder.svg" alt="">
+              <span class="footer-text">Bengaluru</span>
+            </div>
+            <div class="apply-btn">APPLY NOW</div>
+          </div>
+        </div>
+        <div class="career-card">
+          <p class="card-name">Machine Learning Engineer</p>
+          <p class="card-desc">Person employed to analyse and interpret complex digital data, such as the usage statistics of a website, especially in order to assist a business in its decision-making.</p>
+          <div class="card-footer">
+            <div>
+              <img class="time-icon" src="assets/images/landing/time.svg" alt="">
+              <span class="footer-text">2 years experienced</span>
+            </div>
+            <div>
+              <img class="time-icon" src="assets/images/landing/placeholder.svg" alt="">
+              <span class="footer-text">Bengaluru</span>
+            </div>
+            <div class="apply-btn">APPLY NOW</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-row">
+        <div class="career-card">
+          <p class="card-name">Python Developer</p>
+          <p class="card-desc">Person employed to analyse and interpret complex digital data, such as the usage statistics of a website, especially in order to assist a business in its decision-making.</p>
+          <div class="card-footer">
+            <div>
+              <img class="time-icon" src="assets/images/landing/time.svg" alt="">
+              <span class="footer-text">2 years experienced</span>
+            </div>
+            <div>
+              <img class="time-icon" src="assets/images/landing/placeholder.svg" alt="">
+              <span class="footer-text">Bengaluru</span>
+            </div>
+            <div class="apply-btn">APPLY NOW</div>
+          </div>
+        </div>
+        <div class="career-card">
+          <p class="card-name">Full Stack Developer</p>
+          <p class="card-desc">Person employed to analyse and interpret complex digital data, such as the usage statistics of a website, especially in order to assist a business in its decision-making.</p>
+          <div class="card-footer">
+            <div>
+              <img class="time-icon" src="assets/images/landing/time.svg" alt="">
+              <span class="footer-text">2 years experienced</span>
+            </div>
+            <div>
+              <img class="time-icon" src="assets/images/landing/placeholder.svg" alt="">
+              <span class="footer-text">Bengaluru</span>
+            </div>
+            <div class="apply-btn">APPLY NOW</div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <section id="contactus">
+    <div class="contact-bg">
+      <img class="contact-background" src="assets/images/landing/contact-background.svg" alt="">
+      <div class="contact-content">
+        <p class="leadership-title contact-title">GET IN TOUCH WITH US</p>
+        <div class="info-container">
+          <div class="info-left">
+            <input type="text" placeholder="Name">
+
+            <input type="text" placeholder="Company">
+            <input type="text" placeholder="Phone">
+            <textarea  placeholder="Your message"></textarea>
+
+          </div>
+          <div class="info-right">
+            <p class="contact-field">Phone</p>
+            <p class="contact-value">+1 567-678-4590</p>
+
+            <p class="contact-field">e-mail</p>
+            <p class="contact-value">info@patterneffects.com</p>
+
+            <div>
+              <img class="social-media-icons" src="assets/images/landing/facebook.svg" alt="">
+              <img class="social-media-icons" src="assets/images/landing/linked-in.svg" alt="">
+              <img class="social-media-icons" src="assets/images/landing/twitter.svg" alt="">
+            </div>
+          </div>
+
+
+        </div>
+        <div class="contact-footer">
+            <p>© 2018  Copyrights reserved to Pattern effects</p>
+            <p>Designed by Artsieman</p>
+          </div>
+      </div>
+
     </div>
   </section>
 

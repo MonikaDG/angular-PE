@@ -13,6 +13,8 @@ export class MainController {
     $scope.scrollTo = function(id) {
       $location.hash(id);
       githubContributor.scrollTo(id);
+      this.activeTab = id;
+      console.log(this.activeTab);
    }
   }
 
